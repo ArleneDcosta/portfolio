@@ -1,0 +1,19 @@
+.experience {
+    background-color: #f9f9f9;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-item {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  h3, h4 {
+    margin: 5px 0;
+  }
+  
