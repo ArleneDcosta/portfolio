@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Experience.css";
-import experiences from "./experienceData"; // Import the list
+import experiences from "../../data/experienceData"
 
 function Experience() {
   const [expandedIndex, setExpandedIndex] = useState(null);
