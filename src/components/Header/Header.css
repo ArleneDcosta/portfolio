@@ -4,50 +4,52 @@
   justify-content: center; /* Center the text-container horizontally */
   flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
   padding: 40px;
-  background: linear-gradient(135deg, #2a2a2a, #1e1e1e); /* Lighter black gradient */
+  background: linear-gradient(135deg, #3b3b3b, #232323); /* Subtle modern gradient */
   color: #eaeaea; /* Soft white text for contrast */
-  border-radius: 20px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  border-radius: 20px; /* Rounded corners for a modern feel */
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
   margin: 20px; /* Add margin around the header */
-  border: 1px solid #444; /* Subtle border around the header */
-  gap: 20px; /* Reduce space between the text and image */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle semi-transparent border */
+  gap: 25px; /* Adjusted space between the text and image */
 }
 
 .photo {
-  width: 220px; /* Larger profile photo size */
-  height: 290px;
-  border: 2px solid grey; /* Slightly thicker white border */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Stronger shadowed border for the image */
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  width: 240px; /* Slightly larger profile photo size */
+  height: 320px; /* Adjusted height for better proportion */
+  border: 3px solid rgba(255, 255, 255, 0.2); /* Subtle semi-transparent border */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7); /* Stronger shadowed border for the image */
+  border-radius: 15px; /* Rounded corners for the image */
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo:hover {
   transform: scale(1.05); /* Gentle zoom-in on hover */
-  border-color: #cccccc; /* Lighter border on hover */
+  border-color: rgba(255, 255, 255, 0.5); /* Slightly brighter border on hover */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
 }
 
 .text-container {
   text-align: center; /* Center-align the text inside the container */
   flex: 1; /* Let the text take up remaining space */
   margin-left: 20px;
-  margin-right: 10px;
 }
 
 h1 {
-  font-size: 2.4rem; /* Slightly larger font size for main heading */
-  margin-bottom: 10px;
+  font-size: 2.6rem; /* Slightly larger font size for main heading */
+  margin-bottom: 15px;
   letter-spacing: 0.5px;
   font-family: 'Arial', sans-serif; /* Simplified font */
   text-transform: none; /* Removed uppercase for a modern look */
-  color: #ffffff; /* Plain white text for the heading */
+  color: #ffffff; /* Bright white text for the heading */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow for emphasis */
 }
 
 h2 {
-  font-size: 1.6rem; /* Slightly larger font size for subheading */
+  font-size: 1.7rem; /* Slightly larger font size for subheading */
   margin-bottom: 10px; /* Reduced spacing below subheading */
-  font-style: italic;
+  font-style: normal; /* Removed italic for cleaner look */
   font-family: 'Roboto', sans-serif; /* Modern, clean font */
-  color: #b3b3b3; /* Light grey for subheading */
+  color: #c5c5c5; /* Light grey for subheading */
 }
 
 .description {
@@ -55,7 +57,8 @@ h2 {
   margin-bottom: 20px; /* Reduced spacing below the description */
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
-  color: #cccccc; /* Subtle light grey tone for description */
+  color: #d1d1d1; /* Softer grey tone for description */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
 }
 
 .social-links {
@@ -63,21 +66,21 @@ h2 {
 }
 
 .social-links a {
-  margin: 0 8px;
+  margin: 0 10px;
   color: #ffffff; /* White text for buttons */
   text-decoration: none;
-  font-size: 0.95rem; /* Slightly larger font size for links */
-  border: 1.5px solid #ffffff; /* Subtle button border */
-  padding: 10px 20px; /* Slightly larger padding for buttons */
-  border-radius: 20px;
-  background: transparent; /* Transparent for clean look */
+  font-size: 1rem; /* Slightly larger font size for links */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle semi-transparent button border */
+  padding: 12px 25px; /* Adjusted padding for more clickable area */
+  border-radius: 25px; /* More rounded corners for buttons */
+  background: rgba(255, 255, 255, 0.1); /* Transparent background with subtle tint */
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  background: #eaeaea; /* Light grey background on hover */
-  color: #1a1a1a; /* Darker text on hover for contrast */
-  border-color: #cccccc; /* Lighter border on hover */
+  background: rgba(255, 255, 255, 0.8); /* Brighter hover effect */
+  color: #232323; /* Dark text on hover for contrast */
+  border-color: rgba(255, 255, 255, 0.5); /* Slightly brighter border on hover */
   transform: translateY(-2px); /* Slight hover lift */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Soft hover shadow */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Softer hover shadow */
 }
