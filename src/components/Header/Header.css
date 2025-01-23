@@ -1,0 +1,67 @@
+.header {
+  text-align: center;
+  padding: 40px;
+  background: #1a1a1a; /* Lighter black background */
+  color: #eaeaea; /* Soft white text for contrast */
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Slight shadow for template effect */
+}
+
+.photo {
+  width: 140px; /* Reduced size for profile photo */
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #eaeaea; /* Softer white border */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05); /* Gentle zoom-in on hover */
+  border-color: #cccccc; /* Lighter border on hover */
+}
+
+h1 {
+  font-size: 2.2rem; /* Reduced font size for main heading */
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  font-family: 'Arial', sans-serif; /* Simplified font */
+  text-transform: none; /* Removed uppercase for a modern look */
+  color: #ffffff; /* Plain white text for the heading */
+}
+
+h2 {
+  font-size: 1.4rem; /* Reduced font size for subheading */
+  margin-bottom: 15px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  color: #b3b3b3; /* Light grey for subheading */
+}
+
+.description {
+  font-size: 1rem; /* Smaller font size for description */
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #cccccc; /* Subtle light grey tone for description */
+}
+
+.social-links a {
+  margin: 0 8px;
+  color: #ffffff; /* White text for buttons */
+  text-decoration: none;
+  font-size: 0.9rem; /* Reduced font size for links */
+  border: 1.5px solid #ffffff; /* Subtle button border */
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: transparent; /* Transparent for clean look */
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #eaeaea; /* Light grey background on hover */
+  color: #1a1a1a; /* Darker text on hover for contrast */
+  border-color: #cccccc; /* Lighter border on hover */
+  transform: translateY(-2px); /* Slight hover lift */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Soft hover shadow */
+}
