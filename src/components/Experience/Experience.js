@@ -1,23 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Experience.css";
+import experiences from "./experienceData"; // Import the list
 
 function Experience() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
   return (
     <section className="experience">
       <h2>Experience</h2>
       <div className="timeline">
-        <div className="timeline-item">
-          <h3>Job Title</h3>
-          <h4>Company Name</h4>
-          <span>Dates of Employment</span>
-          <p>Description of your role and achievements.</p>
-        </div>
-        <div className="timeline-item">
-          <h3>Job Title</h3>
-          <h4>Company Name</h4>
-          <span>Dates of Employment</span>
-          <p>Description of your role and achievements.</p>
-        </div>
+        {experiences.map((experience, index) => (
+          <div
+            key={index}
+            className={`timeline-item ${
+              expandedIndex === index ? "expanded" : ""
+            }`}
+            onClick={() => toggleExpand(index)}
+          >
+            <h3>{experience.jobTitle}</h3>
+            <h4>{experience.companyName}</h4>
+            <span>{experience.dates}</span>
+            {expandedIndex === index && <p>{experience.description}</p>}
+          </div>
+        ))}
       </div>
     </section>
   );
