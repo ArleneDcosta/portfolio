@@ -7,10 +7,11 @@ function Header() {
     <header className="header">
       <div className="text-container">
         <h1>
-          👋 Hi, I'm{" "}
-          <span className="robotic-name">ARLENE ANTONY D'COSTA</span>
+          👋 Hi, I'm <span className="robotic-name">ARLENE ANTONY D'COSTA</span>
         </h1>
-        <h2>✨ Welcome to my portfolio! ✨</h2>
+        <h2>
+          <span className="typing-animation-once">✨ Welcome to my portfolio!</span>
+        </h2>
         <p className="description">
           🎨 Developer | 💡 Innovator | 🌍 Lifelong Learner <br />
           Let's create something amazing together!
