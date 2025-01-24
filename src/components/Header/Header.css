@@ -89,11 +89,11 @@ h2 {
   0% {
     width: 0;
   }
-  50% {
+  80% {
     width: 100%;
   }
   100% {
-    width: 0;
+    width: 100%;
   }
 }
 
@@ -125,7 +125,8 @@ h2 {
   border-right: 3px solid #ffffff;
   white-space: nowrap;
   width: 0;
-  animation: typing 6s steps(40, end) infinite, blink 0.5s step-end infinite;
+  animation: typing 5s steps(40, end) infinite, blink 0.5s step-end infinite;
+  animation-delay: 0.5s;
 }
 
 /* Floating Animation for Image */
@@ -137,18 +138,18 @@ h2 {
 @keyframes highlight {
   0% {
     color: #ffffff;
-    text-shadow: 0 0 10px #ffffff;
+    text-shadow: none;
   }
   50% {
-    color: #ffcc00;
-    text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    color: #4dabf7; /* Calming blue for software dev theme */
+    text-shadow: 0 0 10px rgba(77, 171, 247, 0.8), 0 0 20px rgba(77, 171, 247, 0.5);
   }
   100% {
     color: #ffffff;
-    text-shadow: 0 0 10px #ffffff;
+    text-shadow: none;
   }
 }
 
 .highlight {
-  animation: highlight 3s ease-in-out infinite;
+  animation: highlight 4s ease-in-out infinite;
 }
