@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import ArleneImage from "../../assets/images/Arlene_image.JPG";
 import NerdCartoon from "../../assets/images/Cartoonfemale.png";
