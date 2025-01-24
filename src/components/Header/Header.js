@@ -7,7 +7,10 @@ function Header() {
     <header className="header">
       <div className="text-container">
         <h1>
-          👋 Hi, I'm <span className="robotic-name">ARLENE ANTONY D'COSTA</span>
+          👋 Hi, I'm <span className="robotic-name">
+            ARLENE ANTONY D'COSTA
+            <span className="glitch-line"></span>
+          </span>
         </h1>
         <h2>
           <span className="typing-animation-once">✨ Welcome to my portfolio!</span>
