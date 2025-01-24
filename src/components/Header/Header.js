@@ -8,7 +8,7 @@ function Header() {
       <div className="text-container">
         <h1>
           👋 Hi, I'm{" "}
-          <span className="robotic-name">Arlene Antony D'costa</span>
+          <span className="robotic-name">ARLENE ANTONY D'COSTA</span>
         </h1>
         <h2>✨ Welcome to my portfolio! ✨</h2>
         <p className="description">

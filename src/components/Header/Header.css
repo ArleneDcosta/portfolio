@@ -129,62 +129,62 @@ h2 {
   animation-delay: 0.5s;
 }
 
-/* Keyframes for the Glitch Effect */
+/* Keyframes for Subtle Glitch Effect */
 @keyframes glitch {
   0% {
-    clip-path: inset(0% 0% 90% 0%);
-    transform: translate(2px, -2px);
+    clip-path: inset(0 0 90% 0);
+    transform: translate(0, 0);
   }
   20% {
-    clip-path: inset(50% 0% 20% 0%);
-    transform: translate(-2px, 2px);
+    clip-path: inset(30% 0 50% 0);
+    transform: translate(-3px, -3px);
   }
   40% {
-    clip-path: inset(20% 0% 50% 0%);
-    transform: translate(2px, -2px);
+    clip-path: inset(10% 0 85% 0);
+    transform: translate(3px, 3px);
   }
   60% {
-    clip-path: inset(40% 0% 30% 0%);
-    transform: translate(-2px, 2px);
+    clip-path: inset(40% 0 40% 0);
+    transform: translate(-3px, 3px);
   }
   80% {
-    clip-path: inset(30% 0% 40% 0%);
-    transform: translate(2px, -2px);
+    clip-path: inset(20% 0 60% 0);
+    transform: translate(3px, -3px);
   }
   100% {
-    clip-path: inset(0% 0% 90% 0%);
+    clip-path: inset(0 0 90% 0);
     transform: translate(0, 0);
   }
 }
 
-/* Glitch Effect for Robotic Name */
+/* Main Styling for Robotic Name */
 .robotic-name {
   font-family: "Courier New", Courier, monospace; /* Monospace font for a computer-like effect */
   font-size: 2.4rem;
   position: relative;
   display: inline-block;
-  color: #00ffcc; /* Futuristic neon green/blue color */
-  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  color: #ffffff; /* White color for text */
+  text-transform: uppercase; /* Capital letters */
+  overflow: hidden;
 }
 
-/* Duplicate Layers for the Glitch Effect */
+/* Duplicate Layers for Glitch Effect */
 .robotic-name::before,
 .robotic-name::after {
-  content: "Arlene Antony D'costa"; /* Duplicate the text for layering */
+  content: "ARLENE ANTONY D'COSTA"; /* Duplicate the text */
   position: absolute;
   top: 0;
   left: 0;
-  color: #ff0000; /* Red for one glitch layer */
+  color: black; /* Black glitch effect */
   background: transparent;
   overflow: hidden;
-  clip-path: inset(0);
+  clip-path: inset(0); /* Start with no clipping */
 }
 
 .robotic-name::before {
-  animation: glitch 1.5s infinite; /* Apply glitch animation */
+  animation: glitch 1s infinite; /* Apply the glitch animation */
 }
 
 .robotic-name::after {
-  color: #0000ff; /* Blue for the second glitch layer */
-  animation: glitch 2s infinite; /* Slightly different timing */
+  animation: glitch 1.5s infinite; /* Slightly different timing for randomness */
 }
