@@ -35,10 +35,13 @@
 }
 
 h1 {
+  display: flex; /* Align text and elements horizontally */
+  align-items: center; /* Ensure vertical alignment */
+  gap: 10px; /* Add spacing between "Hi, I'm" and the name */
   font-size: 2.6rem; /* Slightly larger font size for main heading */
   margin-bottom: 15px;
   letter-spacing: 0.5px;
-  font-family: 'Arial', sans-serif; /* Simplified font */
+  font-family: "Arial", sans-serif; /* Simplified font */
   text-transform: none; /* Removed uppercase for a modern look */
   color: #ffffff; /* Bright white text for the heading */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow for emphasis */
@@ -48,7 +51,7 @@ h2 {
   font-size: 1.7rem; /* Slightly larger font size for subheading */
   margin-bottom: 10px; /* Reduced spacing below subheading */
   font-style: normal; /* Removed italic for cleaner look */
-  font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
   color: #c5c5c5; /* Light grey for subheading */
 }
 
@@ -56,7 +59,7 @@ h2 {
   font-size: 1.1rem; /* Slightly larger font size for description */
   margin-bottom: 20px; /* Reduced spacing below the description */
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #d1d1d1; /* Softer grey tone for description */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
 }
@@ -85,39 +88,6 @@ h2 {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Softer hover shadow */
 }
 
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  80% {
-    width: 100%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  0%, 100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #ffffff;
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 /* Typing Animation for H2 */
 .typing-animation {
   display: inline-block;
@@ -138,6 +108,7 @@ h2 {
   color: #ffffff;
   text-transform: uppercase;
   overflow: hidden;
+  vertical-align: middle; /* Ensure alignment with other text */
 }
 
 /* Glitch Line */
