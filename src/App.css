@@ -31,8 +31,14 @@ button:hover {
 
 /* Adjust for Mobile Screens */
 @media (max-width: 425px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
   .App {
-    max-width: 95%; /* Use most of the screen width on smaller screens */
-    padding: 10px; /* Reduce padding for smaller devices */
+    max-width: 100%; /* Ensure no horizontal overflow */
+    overflow-x: hidden; /* Hide any horizontal overflow caused by child components */
   }
 }
