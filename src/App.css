@@ -28,3 +28,11 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Adjust for Mobile Screens */
+@media (max-width: 425px) {
+  .App {
+    max-width: 95%; /* Use most of the screen width on smaller screens */
+    padding: 10px; /* Reduce padding for smaller devices */
+  }
+}
