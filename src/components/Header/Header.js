@@ -7,8 +7,8 @@ function Header() {
   const [showCartoon, setShowCartoon] = useState(true);
 
   useEffect(() => {
-    // Hide the cartoon after the animation is done
-    const timer = setTimeout(() => setShowCartoon(false), 5000); // 5 seconds
+    // Hide the cartoon after the animation finishes
+    const timer = setTimeout(() => setShowCartoon(false), 4000); // 4 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -16,7 +16,17 @@ function Header() {
     <header className="header">
       <div className="text-container">
         <h1>
-          👋 Hi, I'm <span className="highlight">Arlene Antony D'costa</span>
+          👋 Hi, I'm{" "}
+          <span className="highlight">
+            Arlene Antony D'costa
+            {showCartoon && (
+              <img
+                src={NerdCartoon}
+                alt="Nerd Cartoon"
+                className="nerd-cartoon"
+              />
+            )}
+          </span>
         </h1>
         <h2 className="typing-animation">✨ Welcome to my portfolio! ✨</h2>
         <p className="description">
@@ -41,13 +51,6 @@ function Header() {
         </div>
       </div>
       <img src={ArleneImage} alt="Arlene Antony D'costa" className="photo" />
-      {showCartoon && (
-        <img
-          src={NerdCartoon}
-          alt="Nerd Cartoon"
-          className="nerd-cartoon"
-        />
-      )}
     </header>
   );
 }
