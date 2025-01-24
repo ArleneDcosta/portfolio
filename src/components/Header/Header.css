@@ -112,13 +112,12 @@ h2 {
   vertical-align: middle; /* Ensure alignment with other text */
 }
 
-/* Glitch Line */
 .glitch-line {
   position: absolute;
   top: 50%; /* Horizontally align the glitch line */
   left: 0;
   width: 100%;
-  height: 2px; /* Thin horizontal line */
+  height: 5px; /* Thin horizontal line */
   background-color: black; /* The line's color */
   transform: translateY(-50%);
   animation: glitch-line 3s infinite;
