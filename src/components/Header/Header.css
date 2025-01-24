@@ -170,3 +170,65 @@ h2 {
   width: 0; /* Hidden initially */
   animation: typing-once 4s steps(40, end) forwards, blink-once 0.75s step-end infinite; /* Typing animation */
 }
+
+/* General Styles Above */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align everything */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .photo {
+    width: 200px; /* Reduce image size */
+    height: 260px; /* Maintain proportional height */
+    margin-bottom: 20px; /* Add spacing below image */
+  }
+
+  .text-container {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduce font size for heading */
+    gap: 10px; /* Reduce spacing between text elements */
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Reduce font size for subheading */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Reduce font size for description */
+  }
+
+  .social-links a {
+    font-size: 0.9rem; /* Reduce font size for social links */
+    padding: 8px 20px; /* Adjust padding for smaller buttons */
+    border-radius: 20px; /* Slightly smaller radius */
+  }
+
+  .navigation-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduce spacing between buttons */
+  }
+
+  .navigation-buttons button {
+    font-size: 0.9rem; /* Smaller button text size */
+    padding: 8px 15px; /* Reduce button padding */
+    border-radius: 5px; /* Keep buttons rounded */
+  }
+
+  .robotic-name {
+    font-size: 2.5rem; /* Reduce font size for robotic name */
+  }
+
+  .glitch-line {
+    height: 3px; /* Adjust glitch line thickness for smaller screens */
+  }
+
+  .typing-animation {
+    font-size: 1.2rem; /* Reduce font size for typing animation */
+  }
+}
