@@ -1,7 +1,5 @@
 import React from "react";
 import "./Header.css";
-
-// Importing the image from the assets folder
 import ArleneImage from "../../assets/images/Arlene_image.JPG";
 
 function Header() {
@@ -9,9 +7,9 @@ function Header() {
     <header className="header">
       <div className="text-container">
         <h1>
-          👋 Hi, I'm <span className="highlight">Arlene Antony D'costa</span>!
+          👋 Hi, I'm <span className="highlight">Arlene Antony D'costa</span>
         </h1>
-        <h2>✨ Welcome to my portfolio! ✨</h2>
+        <h2 className="typing-animation">✨ Welcome to my portfolio! ✨</h2>
         <p className="description">
           🎨 Developer | 💡 Innovator | 🌍 Lifelong Learner <br />
           Let's create something amazing together!
@@ -33,8 +31,11 @@ function Header() {
           </a>
         </div>
       </div>
-      {/* Using the imported image */}
-      <img src={ArleneImage} alt="Arlene Antony D'costa" className="photo" />
+      <img
+        src={ArleneImage}
+        alt="Arlene Antony D'costa"
+        className="photo floating-animation"
+      />
     </header>
   );
 }
