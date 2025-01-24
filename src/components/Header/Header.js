@@ -1,34 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Header.css";
 import ArleneImage from "../../assets/images/Arlene_image.JPG";
-import NerdCartoon from "../../assets/images/Cartoonfemale.png";
 
 function Header() {
-  const [showCartoon, setShowCartoon] = useState(true);
-
-  useEffect(() => {
-    // Hide the cartoon after the animation finishes
-    const timer = setTimeout(() => setShowCartoon(false), 4000); // 4 seconds
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <header className="header">
       <div className="text-container">
         <h1>
           👋 Hi, I'm{" "}
-          <span className="highlight">
-            Arlene Antony D'costa
-            {showCartoon && (
-              <img
-                src={NerdCartoon}
-                alt="Nerd Cartoon"
-                className="nerd-cartoon"
-              />
-            )}
-          </span>
+          <span className="robotic-name">Arlene Antony D'costa</span>
         </h1>
-        <h2 className="typing-animation">✨ Welcome to my portfolio! ✨</h2>
+        <h2>✨ Welcome to my portfolio! ✨</h2>
         <p className="description">
           🎨 Developer | 💡 Innovator | 🌍 Lifelong Learner <br />
           Let's create something amazing together!
