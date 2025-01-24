@@ -129,62 +129,46 @@ h2 {
   animation-delay: 0.5s;
 }
 
-/* Keyframes for Subtle Glitch Effect */
-@keyframes glitch {
+/* Keyframes for Horizontal Line Glitch */
+@keyframes glitch-horizontal-line {
   0% {
-    clip-path: inset(0 0 90% 0);
-    transform: translate(0, 0);
+    clip-path: inset(0 0 100% 0);
   }
   20% {
-    clip-path: inset(30% 0 50% 0);
-    transform: translate(-3px, -3px);
+    clip-path: inset(20% 0 60% 0);
   }
   40% {
-    clip-path: inset(10% 0 85% 0);
-    transform: translate(3px, 3px);
+    clip-path: inset(40% 0 40% 0);
   }
   60% {
-    clip-path: inset(40% 0 40% 0);
-    transform: translate(-3px, 3px);
+    clip-path: inset(50% 0 30% 0);
   }
   80% {
-    clip-path: inset(20% 0 60% 0);
-    transform: translate(3px, -3px);
+    clip-path: inset(30% 0 50% 0);
   }
   100% {
-    clip-path: inset(0 0 90% 0);
-    transform: translate(0, 0);
+    clip-path: inset(0 0 100% 0);
   }
 }
 
 /* Main Styling for Robotic Name */
 .robotic-name {
-  font-family: "Courier New", Courier, monospace; /* Monospace font for a computer-like effect */
+  font-family: "Courier New", Courier, monospace;
   font-size: 2.4rem;
   position: relative;
   display: inline-block;
-  color: #ffffff; /* White color for text */
+  color: #ffffff; /* White text */
   text-transform: uppercase; /* Capital letters */
   overflow: hidden;
 }
 
-/* Duplicate Layers for Glitch Effect */
-.robotic-name::before,
-.robotic-name::after {
-  content: "ARLENE ANTONY D'COSTA"; /* Duplicate the text */
+/* Glitch Effect Layer */
+.robotic-name::before {
+  content: "ARLENE ANTONY D'COSTA";
   position: absolute;
   top: 0;
   left: 0;
-  color: black; /* Black glitch effect */
-  background: transparent;
-  overflow: hidden;
-  clip-path: inset(0); /* Start with no clipping */
-}
-
-.robotic-name::before {
-  animation: glitch 1s infinite; /* Apply the glitch animation */
-}
-
-.robotic-name::after {
-  animation: glitch 1.5s infinite; /* Slightly different timing for randomness */
+  color: #000000; /* Black horizontal glitch */
+  clip-path: inset(0 0 100% 0); /* Start fully hidden */
+  animation: glitch-horizontal-line 2s infinite; /* Apply glitch animation */
 }
