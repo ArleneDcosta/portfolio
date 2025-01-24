@@ -171,7 +171,7 @@ h2 {
   animation: typing-once 4s steps(40, end) forwards, blink-once 0.75s step-end infinite; /* Typing animation */
 }
 
-@media (max-width: 425px) {
+@media (max-width: 435px) {
   .header {
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center-align all elements */
