@@ -1,8 +1,17 @@
 import React from "react";
 import "./Header.css";
 import ArleneImage from "../../assets/images/Arlene_image.JPG";
+import NerdCartoon from "../../assets/images/Cartoonfemale.png";
 
 function Header() {
+  const [showCartoon, setShowCartoon] = useState(true);
+
+  useEffect(() => {
+    // Hide the cartoon after the animation is done
+    const timer = setTimeout(() => setShowCartoon(false), 5000); // 5 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <header className="header">
       <div className="text-container">
@@ -31,11 +40,14 @@ function Header() {
           </a>
         </div>
       </div>
-      <img
-        src={ArleneImage}
-        alt="Arlene Antony D'costa"
-        className="photo floating-animation"
-      />
+      <img src={ArleneImage} alt="Arlene Antony D'costa" className="photo" />
+      {showCartoon && (
+        <img
+          src={NerdCartoon}
+          alt="Nerd Cartoon"
+          className="nerd-cartoon"
+        />
+      )}
     </header>
   );
 }
