@@ -13,7 +13,7 @@ function Header() {
           </span>
         </h1>
         <h2>
-          <span className="typing-animation-once">✨ Welcome to my portfolio!</span>
+          <span className="typing-animation-once">✨ Welcome to my portfolio! ✨</span>
         </h2>
         <p className="description">
           🎨 Developer | 💡 Innovator | 🌍 Lifelong Learner <br />

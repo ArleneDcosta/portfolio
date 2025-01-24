@@ -173,31 +173,38 @@ h2 {
 
 @media (max-width: 425px) {
   .header {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center everything */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align all elements */
+    padding: 20px; /* Reduce padding */
     text-align: center; /* Center the text */
-    padding: 20px; /* Reduce padding for smaller screens */
   }
 
-  .photo {
-    width: 180px; /* Smaller image size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space below the image */
+  h1 {
+    font-size: 1.8rem; /* Adjust font size for better fit */
+    gap: 5px; /* Reduce spacing between elements */
+    display: block; /* Ensure "Hi, I'm" and the name are on separate lines */
+    margin-bottom: 10px; /* Add spacing below */
+  }
+
+  .robotic-name {
+    font-size: 2rem; /* Slightly smaller font for the name */
+    display: inline; /* Display name inline to avoid breaking layout */
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Adjust subheading font size */
+    margin-bottom: 10px; /* Add spacing below */
   }
 
   .text-container {
     margin-left: 0; /* Remove left margin */
-    margin-top: 10px; /* Add spacing above text */
+    margin-top: 10px; /* Add spacing above the text */
   }
 
-  h1 {
-    font-size: 1.8rem; /* Reduce font size */
-    gap: 5px; /* Smaller gap between elements */
-  }
-
-  h2 {
-    font-size: 1.3rem; /* Smaller subheading font size */
-    margin-bottom: 15px; /* Add spacing below subheading */
+  .photo {
+    width: 150px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
   }
 
   .description {
