@@ -9,6 +9,7 @@
   font-size: 2rem;
   margin-bottom: 30px;
   color: #333; /* Dark grey for heading */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .timeline {
@@ -22,7 +23,7 @@
 
 
 .timeline-item {
-  background-color: #e0e0e0; /* Grey background for the box */
+  background-color: #766f6f; 
   color: #333; /* Text color */
   padding: 20px;
   border-radius: 10px;
@@ -57,4 +58,8 @@
   margin-top: 15px;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.timeline-item.expanded span {
+  color: #fff;
 }
