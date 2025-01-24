@@ -1,27 +1,27 @@
 .navigation-buttons {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    gap: 15px; /* Space between buttons */
-    margin: 20px 0; /* Add spacing around the section */
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
   }
   
   .navigation-buttons button {
-    font-family: "Arial", sans-serif; /* Clean, classic font */
-    font-size: 1rem; /* Button text size */
-    font-weight: 600; /* Slightly bold text */
-    color: #333; /* Dark grey text */
-    background-color: #e0e0e0; /* Light grey button background */
-    border: 1px solid #999; /* Subtle border for a classic design */
-    padding: 10px 20px; /* Padding inside the buttons */
-    border-radius: 5px; /* Slightly rounded corners for a classic look */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    font-family: "Arial", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
   
   .navigation-buttons button:hover {
-    background-color: #d0d0d0; /* Slightly darker grey on hover */
-    color: #000; /* Black text on hover */
-    border-color: #666; /* Darker border on hover */
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    background-color: #d0d0d0;
+    color: #000;
+    border-color: #666;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   }
   

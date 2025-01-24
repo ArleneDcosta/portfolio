@@ -11,6 +11,7 @@ function NavigationButtons() {
 
   return (
     <section className="navigation-buttons">
+      <button onClick={() => scrollToSection("about")}>About</button>
       <button onClick={() => scrollToSection("experience")}>Experience</button>
       <button onClick={() => scrollToSection("education")}>Education</button>
       <button onClick={() => scrollToSection("projects")}>Projects</button>
