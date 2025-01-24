@@ -171,64 +171,60 @@ h2 {
   animation: typing-once 4s steps(40, end) forwards, blink-once 0.75s step-end infinite; /* Typing animation */
 }
 
-/* General Styles Above */
-
 @media (max-width: 768px) {
   .header {
     flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center align everything */
+    align-items: center; /* Center everything */
+    text-align: center; /* Center the text */
     padding: 20px; /* Reduce padding for smaller screens */
   }
 
   .photo {
-    width: 200px; /* Reduce image size */
-    height: 260px; /* Maintain proportional height */
-    margin-bottom: 20px; /* Add spacing below image */
+    width: 180px; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
   }
 
   .text-container {
     margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add spacing above text */
   }
 
   h1 {
-    font-size: 2rem; /* Reduce font size for heading */
-    gap: 10px; /* Reduce spacing between text elements */
+    font-size: 1.8rem; /* Reduce font size */
+    gap: 5px; /* Smaller gap between elements */
   }
 
   h2 {
-    font-size: 1.4rem; /* Reduce font size for subheading */
+    font-size: 1.3rem; /* Smaller subheading font size */
+    margin-bottom: 15px; /* Add spacing below subheading */
   }
 
   .description {
-    font-size: 0.9rem; /* Reduce font size for description */
+    font-size: 1rem; /* Adjust font size for better readability */
+    margin-bottom: 20px; /* Space below description */
+    line-height: 1.5; /* Add better line spacing */
+  }
+
+  .social-links {
+    margin-top: 15px; /* Add spacing above the social links */
   }
 
   .social-links a {
-    font-size: 0.9rem; /* Reduce font size for social links */
-    padding: 8px 20px; /* Adjust padding for smaller buttons */
-    border-radius: 20px; /* Slightly smaller radius */
-  }
-
-  .navigation-buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Reduce spacing between buttons */
-  }
-
-  .navigation-buttons button {
-    font-size: 0.9rem; /* Smaller button text size */
-    padding: 8px 15px; /* Reduce button padding */
-    border-radius: 5px; /* Keep buttons rounded */
+    font-size: 0.9rem; /* Smaller font size for links */
+    padding: 10px 18px; /* Adjust padding */
+    border-radius: 20px; /* Keep buttons rounded */
   }
 
   .robotic-name {
-    font-size: 2.5rem; /* Reduce font size for robotic name */
+    font-size: 2.2rem; /* Reduce font size for robotic name */
   }
 
   .glitch-line {
-    height: 3px; /* Adjust glitch line thickness for smaller screens */
+    height: 2px; /* Thinner glitch line */
   }
 
-  .typing-animation {
-    font-size: 1.2rem; /* Reduce font size for typing animation */
+  .typing-animation-once {
+    font-size: 1.1rem; /* Adjust font size for typing animation */
   }
 }
