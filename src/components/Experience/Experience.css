@@ -1,6 +1,6 @@
 .experience {
   padding: 40px;
-  background-color: #f4f4f4; /* Light grey background for the section */
+  background-color: #f4f4f4;
   text-align: center;
   border-radius: 15px;
 }
@@ -8,7 +8,7 @@
 .experience h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #333; /* Dark grey for heading */
+  color: #333;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -21,37 +21,48 @@
   margin: 0 auto;
 }
 
-
 .timeline-item {
-  background-color: #ada5a5; 
-  color: #333; /* Text color */
+  background-color: #ada5a5;
+  color: #333;
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box */
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-item:hover {
-  transform: scale(1.02); /* Slight zoom effect on hover */
-  background-color: #d6d6d6; /* Slightly darker grey on hover */
+  transform: scale(1.02);
+  background-color: #c4c4c4; /* Slightly darker grey on hover */
 }
 
 .timeline-item h3,
 .timeline-item h4 {
   margin: 0;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
+/* Improved span visibility */
 .timeline-item span {
   font-size: 0.9rem;
-  color: #777; /* Subtle grey for dates */
+  color: #444; /* Darker grey for better readability */
 }
 
+/* Expanded state with white background and colorful headers */
 .timeline-item.expanded {
-  background-color: #2c2fec; /* Fun pop of orange when expanded */
-  color: #fff; /* White text for contrast */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow when expanded */
+  background-color: #ffffff; /* White background */
+  color: #333;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient-colored headers on expansion */
+.timeline-item.expanded h3,
+.timeline-item.expanded h4 {
+  background: linear-gradient(90deg, #ff6b6b, #a84be3, #ff007f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .timeline-item.expanded p {
@@ -60,6 +71,8 @@
   line-height: 1.6;
 }
 
+/* Ensure span remains visible when expanded */
 .timeline-item.expanded span {
-  color: #fff;
+  color: #222; /* Dark text for better contrast */
+  font-weight: 600;
 }
