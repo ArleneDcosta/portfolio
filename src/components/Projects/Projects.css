@@ -50,14 +50,14 @@
 
 /* Individual card styles */
 .card {
-  background-color: #ada5a5;
+  background-color: #e6e6e6; /* Lighter grey for a soft look */
   color: #333;
   padding: 20px;
   border-radius: 10px;
   width: 320px;
   flex-shrink: 0;
   text-align: left;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -77,6 +77,7 @@
   text-overflow: ellipsis;
 }
 
+/* Bullet point list */
 .card ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -87,13 +88,13 @@
   -ms-overflow-style: none;
 }
 
-
 .card ul::-webkit-scrollbar {
   width: 0px;
   height: 0px;
   display: none;
 }
 
+/* Ensure bullet points wrap correctly */
 .card ul li {
   font-size: 1rem;
   color: #000;
@@ -121,7 +122,7 @@
   color: #000;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
   .project-cards {
     justify-content: flex-start;
