@@ -55,6 +55,7 @@
   padding: 20px;
   border-radius: 10px;
   width: 320px;
+  height: 450px; /* Increased height */
   flex-shrink: 0;
   text-align: left;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
@@ -65,16 +66,17 @@
   overflow: hidden;
 }
 
-/* Prevents overflow in text */
+/* Ensure the entire title is displayed */
 .card h3 {
   background: linear-gradient(90deg, #ff6b6b, #a84be3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.4rem;
   font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal; /* Allows text wrapping */
+  overflow: visible; /* Ensures full title is shown */
+  text-overflow: unset;
+  word-wrap: break-word;
 }
 
 /* Bullet point list */
@@ -82,7 +84,7 @@
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 10px;
-  max-height: 150px; 
+  max-height: 200px; /* Adjusted for larger height */
   overflow-y: auto; 
   scrollbar-width: none; 
   -ms-overflow-style: none;
@@ -103,13 +105,13 @@
   overflow-wrap: break-word;
 }
 
-/* GitHub button */
+/* GitHub button - Now black with white text */
 .card a {
   display: inline-block;
   margin-top: auto;
-  padding: 8px 15px;
-  background-color: #ffffff;
-  color: #333;
+  padding: 10px 15px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -118,8 +120,8 @@
 }
 
 .card a:hover {
-  background-color: #ddd;
-  color: #000;
+  background-color: #333; /* Darker black on hover */
+  color: #fff;
 }
 
 /* Responsive Design */
@@ -131,5 +133,6 @@
 
   .card {
     width: 280px;
+    height: 450px; /* Ensure the height remains adjusted for mobile */
   }
 }
