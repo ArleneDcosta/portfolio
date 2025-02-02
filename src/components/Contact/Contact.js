@@ -30,7 +30,7 @@ function Contact() {
     emailjs
       .send(
         "service_cz2nyf4", 
-        "template_default", 
+        "template_qun8xtt", 
         templateParams,
         "N4uaZIQtsj5w37CFD"
       )
