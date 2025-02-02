@@ -84,7 +84,6 @@
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 10px;
-  max-height: 200px; /* Adjusted for larger height */
   overflow-y: auto; 
   scrollbar-width: none; 
   -ms-overflow-style: none;
