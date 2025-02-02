@@ -1,237 +1,145 @@
 .header {
-  display: flex; /* Align items horizontally */
-  align-items: center; /* Center image and text vertically */
-  justify-content: center; /* Center the text-container horizontally */
-  flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 40px;
-  background: linear-gradient(135deg, #3b3b3b, #232323); /* Subtle modern gradient */
-  color: #eaeaea; /* Soft white text for contrast */
-  border-radius: 20px; /* Rounded corners for a modern feel */
-  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
-  margin: 20px; /* Add margin around the header */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle semi-transparent border */
-  gap: 25px; /* Adjusted space between the text and image */
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9), rgba(10, 10, 10, 0.85)); /* Dark glossy gradient */
+  color: #f5f5f5; /* Soft white text for contrast */
+  border-radius: 20px;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
+  margin: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 25px;
+  backdrop-filter: blur(10px); /* Glass effect */
 }
 
 .photo {
-  width: 240px; /* Slightly larger profile photo size */
-  height: 320px; /* Adjusted height for better proportion */
-  border: 3px solid rgba(255, 255, 255, 0.2); /* Subtle semi-transparent border */
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7); /* Stronger shadowed border for the image */
-  border-radius: 15px; /* Rounded corners for the image */
+  width: 240px;
+  height: 320px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo:hover {
-  transform: scale(1.05); /* Gentle zoom-in on hover */
-  border-color: rgba(255, 255, 255, 0.5); /* Slightly brighter border on hover */
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.9);
 }
 
 .text-container {
-  text-align: center; /* Center-align the text inside the container */
-  flex: 1; /* Let the text take up remaining space */
+  text-align: center;
+  flex: 1;
   margin-left: 20px;
 }
 
 h1 {
-  display: flex; /* Align text and elements horizontally */
-  align-items: center; /* Ensure vertical alignment */
-  justify-content: center; /* Center the content horizontally */
-  gap: 15px; /* Add spacing between "Hi, I'm" and the name */
-  font-size: 2.8rem; /* Slightly larger font size for main heading */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2.8rem;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
-  font-family: "Arial", sans-serif; /* Simplified font */
-  text-transform: none; /* Removed uppercase for a modern look */
-  color: #ffffff; /* Bright white text for the heading */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle text shadow for emphasis */
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2); /* Softer, elegant glow */
 }
 
 h2 {
-  font-size: 1.7rem; /* Slightly larger font size for subheading */
-  margin-bottom: 10px; /* Reduced spacing below subheading */
-  font-style: normal; /* Removed italic for cleaner look */
-  font-family: "Roboto", sans-serif; /* Modern, clean font */
-  color: #c5c5c5; /* Light grey for subheading */
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #cfcfcf; /* Light grey for contrast */
 }
 
 .description {
-  font-size: 1.1rem; /* Slightly larger font size for description */
-  margin-bottom: 20px; /* Reduced spacing below the description */
+  font-size: 1.1rem;
+  margin-bottom: 20px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-  color: #d1d1d1; /* Softer grey tone for description */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
 }
 
 .social-links {
-  margin-top: 15px; /* Space above the social links */
+  margin-top: 15px;
 }
 
 .social-links a {
   margin: 0 10px;
-  color: #ffffff; /* White text for buttons */
+  color: #ffffff;
   text-decoration: none;
-  font-size: 1rem; /* Slightly larger font size for links */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle semi-transparent button border */
-  padding: 12px 25px; /* Adjusted padding for more clickable area */
-  border-radius: 25px; /* More rounded corners for buttons */
-  background: rgba(255, 255, 255, 0.1); /* Transparent background with subtle tint */
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  background: rgba(255, 255, 255, 0.8); /* Brighter hover effect */
-  color: #232323; /* Dark text on hover for contrast */
-  border-color: rgba(255, 255, 255, 0.5); /* Slightly brighter border on hover */
-  transform: translateY(-2px); /* Slight hover lift */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Softer hover shadow */
+  background: rgba(255, 255, 255, 0.8);
+  color: #232323;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Typing Animation for H2 */
-.typing-animation {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 3px solid #ffffff;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 9s steps(30, end) infinite, blink 0.5s step-end infinite;
-  animation-delay: 0.5s;
-}
-
-/* Static Robotic Name Styling */
-.robotic-name {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 3.5rem; /* Increased font size for better visibility */
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  text-transform: uppercase;
-  overflow: hidden;
-  vertical-align: middle; /* Ensure alignment with other text */
-}
-
-.glitch-line {
-  position: absolute;
-  top: 50%; /* Horizontally align the glitch line */
-  left: 0;
-  width: 100%;
-  height: 5px; /* Thin horizontal line */
-  background-color: black; /* The line's color */
-  transform: translateY(-50%);
-  animation: glitch-line 3s infinite;
-  opacity: 0;
-}
-
-/* Glitch Line Animation */
-@keyframes glitch-line {
-  0% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes typing-once {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes blink-once {
-  0%,
-  100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #ffffff;
-  }
-}
-
-.typing-animation-once {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 3px solid #ffffff; /* Cursor */
-  white-space: nowrap;
-  width: 0; /* Hidden initially */
-  animation: typing-once 4s steps(40, end) forwards, blink-once 0.75s step-end infinite; /* Typing animation */
-}
-
+/* Adjustments for mobile screens */
 @media (max-width: 435px) {
   .header {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align all elements */
-    padding: 20px; /* Reduce padding */
-    text-align: center; /* Center the text */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
   }
 
   h1 {
-    font-size: 1.8rem; /* Adjust font size for better fit */
-    gap: 5px; /* Reduce spacing between elements */
-    display: block; /* Ensure "Hi, I'm" and the name are on separate lines */
-    margin-bottom: 10px; /* Add spacing below */
+    font-size: 1.8rem;
+    gap: 5px;
+    display: block;
+    margin-bottom: 10px;
   }
 
   .robotic-name {
-    font-size: 2rem; /* Slightly smaller font for the name */
-    display: inline; /* Display name inline to avoid breaking layout */
+    font-size: 2rem;
+    display: inline;
   }
 
   h2 {
-    font-size: 1.4rem; /* Adjust subheading font size */
-    margin-bottom: 10px; /* Add spacing below */
+    font-size: 1.4rem;
+    margin-bottom: 10px;
   }
 
   .text-container {
-    margin-left: 0; /* Remove left margin */
-    margin-top: 10px; /* Add spacing above the text */
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .photo {
-    width: 150px; /* Adjust image size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space below the image */
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .description {
-    font-size: 1rem; /* Adjust font size for better readability */
-    margin-bottom: 20px; /* Space below description */
-    line-height: 1.5; /* Add better line spacing */
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
 
   .social-links {
-    margin-top: 15px; /* Add spacing above the social links */
+    margin-top: 15px;
   }
 
   .social-links a {
-    font-size: 0.9rem; /* Smaller font size for links */
-    padding: 10px 18px; /* Adjust padding */
-    border-radius: 20px; /* Keep buttons rounded */
-  }
-
-  .robotic-name {
-    font-size: 2.2rem; /* Reduce font size for robotic name */
-  }
-
-  .glitch-line {
-    height: 2px; /* Thinner glitch line */
-  }
-
-  .typing-animation-once {
-    font-size: 1.1rem; /* Adjust font size for typing animation */
+    font-size: 0.9rem;
+    padding: 10px 18px;
+    border-radius: 20px;
   }
 }
