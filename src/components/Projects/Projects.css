@@ -81,11 +81,19 @@
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 10px;
-  max-height: 150px;
-  overflow-y: auto;
+  max-height: 150px; 
+  overflow-y: auto; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
 
-/* Ensure bullet points wrap correctly */
+
+.card ul::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
 .card ul li {
   font-size: 1rem;
   color: #000;
