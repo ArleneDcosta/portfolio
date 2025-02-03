@@ -21,28 +21,30 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
+    const testParams = {
+      to_name: "Arlene_Dcosta",
+      from_name:formData.name,
+      from_email: formData.email,
+      message: formData.message
     };
-
-    emailjs
-      .send(
-        "service_cz2nyf4", 
-        "template_qun8xtt", 
-        templateParams,
-        "N4uaZIQtsj5w37CFD"
-      )
-      .then(
-        (response) => {
-          alert("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "", file: null });
-        },
-        (error) => {
-          alert("Failed to send message. Please try again.");
-        }
-      );
+    
+    emailjs.send(
+      "service_cz2nyf4",
+      "template_qun8xtt",
+      testParams,
+      "N4uaZIQtsj5w37CFD"
+    ).then(
+      (response) => {
+        console.log("Message sent successfully!", response);
+        setFormData({
+          name: "",
+          email: "",
+          message: ""
+        });
+      
+      },
+      (error) => console.error("Failed to send message. Please try again.", error)
+    );
   };
 
   return (
@@ -72,7 +74,6 @@ function Contact() {
           onChange={handleChange}
           required
         ></textarea>
-        <input type="file" name="file" onChange={handleChange} disabled />
         <button type="submit">Send Message</button>
       </form>
     </section>
