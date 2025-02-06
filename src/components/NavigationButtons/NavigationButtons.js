@@ -10,6 +10,7 @@ function NavigationButtons() {
   };
 
   return (
+  <div class="navigation">
     <section className="navigation-buttons">
       <button onClick={() => scrollToSection("about")}>About</button>
       <button onClick={() => scrollToSection("experience")}>Experience</button>
@@ -17,6 +18,7 @@ function NavigationButtons() {
       <button onClick={() => scrollToSection("projects")}>Projects</button>
       <button onClick={() => scrollToSection("contact")}>Contact Me</button>
     </section>
+    </div>
   );
 }
 

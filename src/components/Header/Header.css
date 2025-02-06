@@ -1,14 +1,20 @@
+.header-section {
+  background: linear-gradient(180deg, #f0e6ff, #e6ccff); /* Light Purple Gradient */
+}
+
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 40px;
-  background: linear-gradient(180deg, #0a0a0a, #000000); /* Deep black gradient */
+  padding: 60px 40px; /* Increased padding for more height */
+  min-height: 400px; /* Ensures a taller header */
+  background: linear-gradient(180deg, #0a0a0a, #000000);
   color: #f5f5f5;
   border-radius: 20px;
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.7);
-  margin: 20px;
+  margin: 20px 20px 0 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   gap: 25px;
   backdrop-filter: blur(12px);
@@ -47,6 +53,15 @@ h1 {
   text-transform: none;
   color: #ffffff;
   text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.15);
+}
+
+h1 .highlight {
+  background: linear-gradient(90deg, #ff6b6b, #a84be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
 }
 
 h2 {
@@ -106,10 +121,7 @@ h2 {
     margin-bottom: 10px;
   }
 
-  .robotic-name {
-    font-size: 2rem;
-    display: inline;
-  }
+
 
   h2 {
     font-size: 1.4rem;

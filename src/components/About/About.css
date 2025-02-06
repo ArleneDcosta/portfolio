@@ -1,31 +1,64 @@
+.about-section {
+  background: linear-gradient(180deg, #de68d6, #b07ce1); /* Soft light purple gradient */
+  padding: 60px 0; /* Add padding for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about {
-  background-color: #ffffff; /* White background */
-  padding: 40px;
+  background: linear-gradient(180deg, #0a0a0a, #000000); /* Dark black theme */
+  padding: 50px;
   text-align: center;
-  border-radius: 15px; /* Rounded corners for the section */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+  border-radius: 20px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6); /* Darker shadow */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin: 50px auto;
+  max-width: 900px; /* Keeps it centered */
 }
 
+/* Stylish Heading */
 .about h2 {
-  color: #000000; /* Black color for the heading */
-  font-size: 2rem; /* Slightly larger font size for emphasis */
-  margin-bottom: 20px; /* Space below the heading */
-  font-family: 'Arial', sans-serif; /* Clean font for heading */
-  font-style: normal; /* Ensure the font is not italic */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the text */
+  color: #ffffff; /* White text for contrast */
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, #ff6b6b, #a84be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
-
+/* Content Box */
 .about p {
-  background-color: #c0bbbb; /* Very light grey background for the text */
-  color: #333333; /* Dark grey for text readability */
-  padding: 20px; /* Add padding inside the box */
-  font-size: 1rem; /* Standard font size */
-  font-family: 'Roboto', sans-serif; /* Modern font for body text */
-  border-radius: 10px; /* Rounded corners for the box */
-  line-height: 1.6; /* Line height for better readability */
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on right and bottom */
-  display: inline-block; /* Ensures the box adjusts to text width */
-  text-align: left; /* Align the text inside the box */
+  background: rgba(255, 255, 255, 0.1); /* Subtle dark transparency */
+  color: #e0e0e0; /* Soft white text */
+  padding: 25px;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 12px;
+  line-height: 1.8;
+  box-shadow: 6px 6px 20px rgba(255, 255, 255, 0.1); /* Soft glowing effect */
+  display: inline-block;
+  text-align: left;
+  max-width: 80%;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    padding: 20px;
+    max-width: 100%;
+  }
+}
