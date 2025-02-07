@@ -1,62 +1,66 @@
-.experience {
-  padding: 40px;
-  background-color: #f4f4f4;
+/* Background wrapper */
+.experience-section {
+  background: linear-gradient(180deg, #b07ce1, #de68d6, #f0e6ff); 
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Enlarged black container */
+.experience-container {
+  background-color: #141414;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 1000px; /* Increased width */
+  margin: 0 auto;
   text-align: center;
-  border-radius: 15px;
 }
 
-.experience h2 {
-  font-size: 2rem;
+/* Experience Title inside the black container */
+.experience-title {
+  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b6b, #a84be3); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
+/* Timeline */
 .timeline {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
+/* Experience cards */
 .timeline-item {
   background-color: #ada5a5;
   color: #333;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-item:hover {
   transform: scale(1.02);
-  background-color: #c4c4c4; /* Slightly darker grey on hover */
-}
-
-.timeline-item h3,
-.timeline-item h4 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* Improved span visibility */
-.timeline-item span {
-  font-size: 0.9rem;
-  color: #444; /* Darker grey for better readability */
+  background-color: #c4c4c4;
 }
 
 /* Expanded state with white background and colorful headers */
 .timeline-item.expanded {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   color: #333;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Gradient-colored headers on expansion */
+/* Gradient-colored headers inside expanded cards */
 .timeline-item.expanded h3,
 .timeline-item.expanded h4 {
   background: linear-gradient(90deg, #ff6b6b, #a84be3, #ff007f);
@@ -65,14 +69,24 @@
   font-weight: bold;
 }
 
-.timeline-item.expanded p {
-  margin-top: 15px;
-  font-size: 1rem;
-  line-height: 1.6;
+/* Ensuring span visibility */
+.timeline-item.expanded span {
+  color: #222;
+  font-weight: 600;
 }
 
-/* Ensure span remains visible when expanded */
-.timeline-item.expanded span {
-  color: #222; /* Dark text for better contrast */
-  font-weight: 600;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience-container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .timeline-item {
+    padding: 20px;
+  }
 }
