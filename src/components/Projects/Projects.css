@@ -1,116 +1,125 @@
-.projects {
-  padding: 40px;
+/* Background Wrapper for the entire Projects section */
+.projects-section {
+  background: linear-gradient(180deg, #f0e6ff, #de68d6, #b07ce1);
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Black container for projects */
+.projects-container {
+  background-color: #141414;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  width: 95%; /* Increased width */
+  max-width: 1300px; /* Adjusted max width */
+  margin: 0 auto;
   text-align: center;
-  background-color: #f4f4f4;
-  border-radius: 15px;
-  overflow: hidden;
 }
 
-.projects h2 {
-  font-size: 2rem;
+/* Title styling */
+.projects-title {
+  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b6b, #a84be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-/* Scrollable container */
+/* Scrollable project cards */
 .project-cards-container {
-  overflow-x: scroll;
+  overflow-x: auto; /* Allow horizontal scrolling */
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
   position: relative;
-}
-
-/* Hides scrollbar in Chrome, Safari, Edge */
-.project-cards-container::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  display: none;
-}
-
-/* Hides scrollbar in Firefox */
-.project-cards-container {
   scrollbar-width: none;
-}
-
-/* Hides scrollbar in Internet Explorer & Edge */
-.project-cards-container {
   -ms-overflow-style: none;
 }
 
-/* Horizontal scrolling section */
+/* Hide scrollbar for Webkit browsers */
+.project-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card container */
 .project-cards {
   display: flex;
   gap: 20px;
   padding-bottom: 10px;
   min-width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-left: 20px;
 }
 
-/* Individual card styles */
+/* Individual Project Card */
 .card {
-  background-color: #e6e6e6; /* Lighter grey for a soft look */
-  color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  width: 320px;
-  height: 450px; /* Increased height */
+  background-color: #1e1e1e; /* Slightly lighter than black */
+  color: #f5f5f5;
+  padding: 25px; /* Increased padding */
+  border-radius: 12px;
+  width: 350px; /* Increased card width */
   flex-shrink: 0;
   text-align: left;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
 }
 
-/* Ensure the entire title is displayed */
+/* Hover effect */
+.card:hover {
+  transform: scale(1.02);
+  background-color: #252525;
+}
+
+/* Project Title */
 .card h3 {
   background: linear-gradient(90deg, #ff6b6b, #a84be3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.4rem;
+  font-size: 1.5rem; /* Slightly bigger for emphasis */
   font-weight: bold;
-  white-space: normal; /* Allows text wrapping */
-  overflow: visible; /* Ensures full title is shown */
-  text-overflow: unset;
-  word-wrap: break-word;
 }
 
-/* Bullet point list */
+/* Project Description */
 .card ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 10px;
-  overflow-y: auto; 
-  scrollbar-width: none; 
+  max-height: 180px; /* Increased max height */
+  overflow-y: auto;
+  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
+/* Hide scrollbar for project description */
 .card ul::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
   display: none;
 }
 
-/* Ensure bullet points wrap correctly */
+/* Individual bullet points */
 .card ul li {
   font-size: 1rem;
-  color: #000;
+  color: #dcdcdc;
   margin-bottom: 5px;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-/* GitHub button - Now black with white text */
+/* GitHub button */
 .card a {
   display: inline-block;
   margin-top: auto;
-  padding: 10px 15px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  padding: 10px 18px;
+  background-color: #ffffff;
+  color: #333;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -118,12 +127,33 @@
   text-align: center;
 }
 
+/* Hover effect for GitHub button */
 .card a:hover {
-  background-color: #333; /* Darker black on hover */
-  color: #fff;
+  background-color: #ddd;
+  color: #000;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-cards {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .card {
+    width: 320px; /* Adjusted for responsiveness */
+  }
+}
+
 @media (max-width: 768px) {
   .project-cards {
     justify-content: flex-start;
@@ -131,7 +161,12 @@
   }
 
   .card {
-    width: 280px;
-    height: 450px; /* Ensure the height remains adjusted for mobile */
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 280px; /* Smaller width for small screens */
   }
 }
