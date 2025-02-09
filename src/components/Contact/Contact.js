@@ -7,15 +7,10 @@ function Contact() {
     name: "",
     email: "",
     message: "",
-    file: null,
   });
 
   const handleChange = (e) => {
-    if (e.target.type === "file") {
-      setFormData({ ...formData, file: e.target.files[0] });
-    } else {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
-    }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -23,11 +18,11 @@ function Contact() {
 
     const testParams = {
       to_name: "Arlene_Dcosta",
-      from_name:formData.name,
+      from_name: formData.name,
       from_email: formData.email,
-      message: formData.message
+      message: formData.message,
     };
-    
+
     emailjs.send(
       "service_cz2nyf4",
       "template_qun8xtt",
@@ -36,47 +31,49 @@ function Contact() {
     ).then(
       (response) => {
         console.log("Message sent successfully!", response);
-        setFormData({
-          name: "",
-          email: "",
-          message: ""
-        });
-      
+        setFormData({ name: "", email: "", message: "" });
       },
       (error) => console.error("Failed to send message. Please try again.", error)
     );
   };
 
   return (
-    <section id="contact" className="contact">
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <div id="contact" className="contact-section">
+      <div className="contact-container">
+        <h2 className="contact-title">Contact Me</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div className="contact-extra">
+        <h3>Let's Connect</h3>
+        <p>Feel free to reach out for collaborations, inquiries, or just a chat!</p>
+      </div>
+    </div>
   );
 }
 

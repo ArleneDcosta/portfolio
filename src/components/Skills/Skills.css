@@ -1,18 +1,108 @@
-.skills {
-    background-color: #f9f9f9;
+/* Background Wrapper */
+.skills-section {
+  background: linear-gradient(180deg,#b07ce1, #de68d6,#f0e6ff );
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Black Container */
+.skills-container {
+  background-color: #141414;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Title */
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b6b, #a84be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Skills Content */
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Skill Category */
+.skills-category {
+  background-color: #1e1e1e; /* Slightly lighter than black */
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  text-align: left;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.skills-category:hover {
+  transform: scale(1.02);
+  background-color: #252525;
+}
+
+/* Category Title */
+.skills-category h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b6b, #a84be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills-category ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Individual Skill Item */
+.skills-category ul li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dcdcdc;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    width: 95%;
+    padding: 30px;
   }
-  
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+
+  .skills-title {
+    font-size: 2rem;
   }
-  
-  .skill {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+
+  .skills-category {
+    width: 90%;
   }
-  
+
+  .skills-category h3 {
+    font-size: 1.3rem;
+  }
+}

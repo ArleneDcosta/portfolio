@@ -40,12 +40,10 @@
   -ms-overflow-style: none;
 }
 
-/* Hide scrollbar for Webkit browsers */
 .project-cards-container::-webkit-scrollbar {
   display: none;
 }
 
-/* Card container */
 .project-cards {
   display: flex;
   gap: 20px;
@@ -56,13 +54,13 @@
   padding-left: 20px;
 }
 
-/* Individual Project Card */
 .card {
-  background-color: #1e1e1e; /* Slightly lighter than black */
+  background-color: #1e1e1e;
   color: #f5f5f5;
-  padding: 25px; /* Increased padding */
+  padding: 25px;
   border-radius: 12px;
-  width: 350px; /* Increased card width */
+  width: 350px; /* Ensures uniform width */
+  height: 450px; /* Fixes height so all cards remain uniform */
   flex-shrink: 0;
   text-align: left;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
@@ -84,24 +82,30 @@
   background: linear-gradient(90deg, #ff6b6b, #a84be3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5rem; /* Slightly bigger for emphasis */
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Project Description */
+/* 🛠️ FIXED: Ensure `<ul>` fits inside the card and remains scrollable */
 .card ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 10px;
-  max-height: 180px; /* Increased max height */
-  overflow-y: auto;
-  scrollbar-width: none;
+  flex-grow: 1; /* Allows the list to expand while maintaining space */
+  max-height: 230px; /* Restricts the description height so it scrolls */
+  overflow-y: auto; /* Enables scrolling */
+  scrollbar-width: none; /* Custom scrollbar for Firefox */
   -ms-overflow-style: none;
 }
 
-/* Hide scrollbar for project description */
+/* Hide scrollbar for Webkit browsers */
 .card ul::-webkit-scrollbar {
-  display: none;
+ display: none;
+}
+
+
+.card ul::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Matches card background */
 }
 
 /* Individual bullet points */
@@ -132,6 +136,7 @@
   background-color: #ddd;
   color: #000;
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {

@@ -16,6 +16,7 @@ function NavigationButtons() {
       <button onClick={() => scrollToSection("experience")}>Experience</button>
       <button onClick={() => scrollToSection("education")}>Education</button>
       <button onClick={() => scrollToSection("projects")}>Projects</button>
+      <button onClick={() => scrollToSection("skills")}>Skills</button>
       <button onClick={() => scrollToSection("contact")}>Contact Me</button>
     </section>
     </div>

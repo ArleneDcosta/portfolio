@@ -4,7 +4,7 @@ import projectData from "../../data/projectData";
 
 function Projects() {
   return (
-    <div className="projects-section">
+    <div id = "projects" className="projects-section">
       <div className="projects-container">
         <h2 className="projects-title">Projects</h2>
         <div className="project-cards-container">
