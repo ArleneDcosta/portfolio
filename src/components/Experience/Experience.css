@@ -1,6 +1,6 @@
 /* Background wrapper */
 .experience-section {
-  background: linear-gradient(180deg, #b07ce1, #de68d6, #f0e6ff); 
+  background: linear-gradient(180deg, #b07ce1, #de68d6, #f0e6ff);
   padding: 60px 0;
   display: flex;
   justify-content: center;
@@ -13,17 +13,17 @@
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
   width: 90%;
-  max-width: 1000px; /* Increased width */
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Experience Title inside the black container */
+/* Experience Title */
 .experience-title {
   font-size: 2.5rem;
   margin-bottom: 30px;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff6b6b, #a84be3); 
+  background: linear-gradient(90deg, #ff6b6b, #a84be3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
@@ -37,30 +37,70 @@
   width: 100%;
 }
 
-/* Experience cards */
+/* Experience Card */
 .timeline-item {
-  background-color: #ada5a5;
-  color: #333;
+  background: rgba(42, 42, 42, 0.85);
+  color: #ffffff;
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Hover effect */
 .timeline-item:hover {
   transform: scale(1.02);
-  background-color: #c4c4c4;
+  background: rgba(58, 58, 58, 0.9);
 }
 
-/* Expanded state with white background and colorful headers */
+/* Experience Header (Image + Text) */
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Company Logo */
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Text beside the logo */
+.experience-text {
+  text-align: left;
+  flex: 1;
+}
+
+/* Titles */
+.timeline-item h3,
+.timeline-item h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Date span */
+.timeline-item span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Expanded state */
 .timeline-item.expanded {
-  background-color: #ffffff;
-  color: #333;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(50, 50, 50, 0.95);
+  color: #fff;
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.1);
 }
 
-/* Gradient-colored headers inside expanded cards */
+/* Gradient headers in expanded state */
 .timeline-item.expanded h3,
 .timeline-item.expanded h4 {
   background: linear-gradient(90deg, #ff6b6b, #a84be3, #ff007f);
@@ -69,9 +109,17 @@
   font-weight: bold;
 }
 
-/* Ensuring span visibility */
+/* Description list */
+.description-list {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Ensure span remains visible */
 .timeline-item.expanded span {
-  color: #222;
+  color: #ddd;
   font-weight: 600;
 }
 
@@ -88,5 +136,15 @@
 
   .timeline-item {
     padding: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-logo {
+    width: 60px;
+    height: 60px;
   }
 }

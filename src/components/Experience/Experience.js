@@ -11,7 +11,7 @@ function Experience() {
 
   return (
     <div className="experience-section">
-      <section id="experience" className="experience-container">
+      <div className="experience-container">
         <h2 className="experience-title">Experience</h2>
         <div className="timeline">
           {experiences.map((experience, index) => (
@@ -20,9 +20,15 @@ function Experience() {
               className={`timeline-item ${expandedIndex === index ? "expanded" : ""}`}
               onClick={() => toggleExpand(index)}
             >
-              <h3>{experience.jobTitle}</h3>
-              <h4>{experience.companyName}</h4>
-              <span>{experience.dates}</span>
+              <div className="experience-header">
+                <img src={experience.image} alt={experience.companyName} className="experience-logo" />
+                <div className="experience-text">
+                  <h3>{experience.jobTitle}</h3>
+                  <h4>{experience.companyName}</h4>
+                  <span>{experience.dates}</span>
+                </div>
+              </div>
+
               {expandedIndex === index && (
                 <ul className="description-list">
                   {experience.description.map((point, idx) => (
@@ -33,7 +39,7 @@ function Experience() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,8 @@ const experiences = [
       "Developed AWS Lambda functions to transition applications from AWS SQS to AWS Kinesis, enabling real-time data streaming event by implementing producers triggered by SFTP metadata uploads stored in S3 buckets",
       "Applied design patterns to create scalable and maintainable code and data structures decreasing technical debt by 35% and improving code reusability and actively participated in code reviews to ensure code quality, maintainability, and adherence to best practices",
       "Collaborated in an Agile environment with cross-functional teams to deliver high-quality end-to-end solutions in iterative sprints"
-    ]},
+    ],
+      image:  require("../assets/images/Mihin_logo.jpg")},
     {
       jobTitle: "Software Developer",
       companyName: "Rebel",
@@ -19,7 +20,8 @@ const experiences = [
         "Developed a single page application using ReactJs and Django Framework with GCP Pub Sub for unstructured data storage and PostGreSQL database for enhancing metadata and log storage in a fast-paced startup environment",
         "Designed data models, and developed serializers for REST APIs to ensure efficient data handling and communication",
         "Implemented caching mechanism using image blob storage within tokens to reduce cloud API calls, achieving a 20% decrease in cloud API usage costs"
-      ]
+      ],
+      image: require("../assets/images/Rebel_logo.png")
     },
     {
       jobTitle: "Senior Data Engineer",
@@ -34,7 +36,8 @@ const experiences = [
         "Developed and tested a sophisticated xml parser for a Metadata Lineage tool with an inventory of 1,00,000 objects",
         "Implemented Slowly Changing Dimensions (SCD) on Google BigQuery, utilizing Oracle Server for efficient metadata management and storage"
 
-      ]
+      ],
+      image: require("../assets/images/LTIMindtree_logo.jpg")
     },
     {
         jobTitle: "Data Engineer",
@@ -47,7 +50,9 @@ const experiences = [
         "Tuned complex queries with strategies reducing the Snowflake job execution time from 2 hours to 20 minutes",
         "Implemented ETL processes using DBT (Data Build Tool) to transform, clean, and organize data, ensuring high data quality"
         
-    ]}
+    ],
+    image: require("../assets/images/LTIMindtree_logo.jpg")
+  }
   ];
   
   export default experiences;
