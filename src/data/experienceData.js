@@ -13,7 +13,7 @@ const experiences = [
     ],
       image:  require("../assets/images/Mihin_logo.jpg")},
     {
-      jobTitle: "Software Developer",
+      jobTitle: "Software Developer Intern",
       companyName: "Rebel",
       dates: "May 2024 - July 2024",
       description:[
