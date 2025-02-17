@@ -32,6 +32,15 @@ const projectData = [
       ],
       github: "https://github.com/ArleneDcosta/portfolio",
     },
+    {
+      title: "Automating ec2 instance creation using Terraform",
+      description: [
+        "Provisioned an Amazon EC2 instance using Terraform, configuring security groups, key pairs, and IAM roles for secure access and resource management",
+        "Automated instance creation with user data scripts to initialize services, install dependencies, and configure the application environment upon launch",
+        "Implemented a security-first approach by restricting inbound traffic with security groups and allowing only necessary ports (e.g., SSH and HTTP)"
+      ],
+      github: "https://github.com/ArleneDcosta/tf_ec2_deployment",
+    }
   ];
   
   export default projectData;
