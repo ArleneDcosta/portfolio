@@ -40,6 +40,17 @@ const projectData = [
         "Implemented a security-first approach by restricting inbound traffic with security groups and allowing only necessary ports (e.g., SSH and HTTP)"
       ],
       github: "https://github.com/ArleneDcosta/tf_ec2_deployment",
+    },
+    {
+      title: "Book Application using Spring Hibernate Framework",
+      description: [
+        "Developed a Book Application using Spring Boot, Spring Data JPA, and Hibernate to manage book records, including usage history and depreciation tracking",
+    "Implemented business logic to calculate book depreciation over time based on usage frequency and predefined depreciation factors",
+    "Designed RESTful APIs for managing books, authors, and borrowing history, supporting JSON-based client-server communication",
+    "Used Spring Data JPA repositories to abstract database queries, enabling efficient CRUD operations and custom queries for usage metrics",
+    "Leveraged Hibernate ORM to handle entity relationships (e.g., OneToMany between books and borrow records) with automatic schema generation"
+      ],
+      github: "https://github.com/ArleneDcosta/BookServiceApplication",
     }
   ];
   
